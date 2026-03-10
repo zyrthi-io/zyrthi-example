@@ -1,0 +1,14 @@
+name: zyrthi/example-blink
+version: "0.1.0"
+description: Blink example for zyrthi framework
+license: MIT
+
+platform: esp32
+board: esp32c3
+
+dependencies:
+  zyrthi/hal: ">=0.1.0"
+  zyrthi/core: ">=0.1.0"
+  zyrthi/hal-adapter-esp32: ">=0.1.0"
+
+src: src

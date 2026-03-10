@@ -1,0 +1,30 @@
+platform: esp32
+chip: esp32c3
+
+compiler:
+  prefix: riscv32-esp-elf-
+  cflags:
+    - -Os
+    - -g
+    - -Wall
+  ldflags:
+    - -nostdlib
+  includes:
+    - include
+    - deps/zyrthi/hal/include
+    - deps/zyrthi/core/include
+    - deps/zyrthi/hal-adapter-esp32/include
+
+flash:
+  plugin: https://github.com/zyrthi-io/zyrthi-platform-esp32/releases/download/v0.1.0/esp32-flash.wasm
+  entry_addr: "0x0"
+  default_baud: 115200
+
+monitor:
+  baud: 115200
+  timestamp: true
+
+project:
+  name: blink
+  sources:
+    - src/
