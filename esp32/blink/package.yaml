@@ -1,10 +1,10 @@
-name: zyrthi/example-blink
+name: zyrthi/example-esp32-blink
 version: "0.1.0"
-description: Blink example for zyrthi framework
+description: LED blink example for ESP32
 license: MIT
 
 platform: esp32
-board: esp32c3
+board: any
 
 dependencies:
   zyrthi/hal: ">=0.1.0"

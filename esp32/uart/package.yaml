@@ -1,0 +1,14 @@
+name: zyrthi/example-esp32-uart
+version: "0.1.0"
+description: UART echo example for ESP32
+license: MIT
+
+platform: esp32
+board: any
+
+dependencies:
+  zyrthi/hal: ">=0.1.0"
+  zyrthi/core: ">=0.1.0"
+  zyrthi/hal-adapter-esp32: ">=0.1.0"
+
+src: src
