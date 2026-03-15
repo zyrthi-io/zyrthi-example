@@ -1,0 +1,13 @@
+# dehub lock file - 自动生成，请勿手动修改
+
+version: 1
+dependencies:
+    - name: zyrthi/hal
+      version: 0.1.0
+      sha256: ""
+    - name: zyrthi/core
+      version: 0.1.0
+      sha256: ""
+    - name: zyrthi/hal-adapter-esp32
+      version: 0.1.0
+      sha256: ""

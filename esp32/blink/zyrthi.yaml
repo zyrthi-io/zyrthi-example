@@ -11,9 +11,9 @@ compiler:
     - -nostdlib
   includes:
     - include
-    - deps/zyrthi/hal/include
-    - deps/zyrthi/core/include
-    - deps/zyrthi/hal-adapter-esp32/include
+    - .dehub/deps/zyrthi/hal/0.1.0/include
+    - .dehub/deps/zyrthi/core/0.1.0/include
+    - .dehub/deps/zyrthi/hal-adapter-esp32/0.1.0/include
 
 flash:
   plugin: https://github.com/zyrthi-io/zyrthi-platform-esp32/releases/download/v0.1.0/esp32-flash.wasm
