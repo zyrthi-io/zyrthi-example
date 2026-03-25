@@ -1,14 +1,16 @@
 platform: esp32
-chip: esp32c3
+chip: esp32s3
 
 compiler:
-  prefix: riscv32-esp-elf-
+  prefix: xtensa-esp32s3-elf-
   cflags:
     - -Os
     - -g
     - -Wall
   ldflags:
     - -nostdlib
+    - -T
+    - link.ld
   includes:
     - include
     - .dehub/deps/zyrthi/hal/0.1.0/include
@@ -28,3 +30,5 @@ project:
   name: blink
   sources:
     - src/
+    - .dehub/deps/zyrthi/core/0.1.0/src/
+    - .dehub/deps/zyrthi/hal-adapter-esp32/0.1.0/src/

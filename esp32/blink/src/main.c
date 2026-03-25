@@ -6,14 +6,14 @@ int main(void) {
     // 初始化系统
     system_init();
     
-    // 配置 LED GPIO (ESP32-C3 内置 LED 为 GPIO 8)
-    gpio_mode(8, OUTPUT);
+    // 配置 LED GPIO (ESP32-S3 LED 为 GPIO 12)
+    gpio_mode(12, OUTPUT);
     
     // 主循环
     while (1) {
-        gpio_write(8, HIGH);
+        gpio_write(12, HIGH);
         delay_ms(500);
-        gpio_write(8, LOW);
+        gpio_write(12, LOW);
         delay_ms(500);
     }
     
